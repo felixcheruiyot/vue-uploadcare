@@ -16,7 +16,7 @@ $ npm install vue-uploadcare
 ```html
 <template>
   <div>
-    <VueUploadcare :url.sync="photoUrl"></VueUploadcare>
+    <VueUploadcare :url.sync="photoUrl" images-only="true"></VueUploadcare>
   </div>
 </template>
 
