@@ -1,5 +1,5 @@
 <template>
-  <input type="hidden">
+  <input type="hidden" v-bind:data-images-only="imagesOnly">
 </template>
 
 <script>
@@ -9,6 +9,9 @@
     props: {
       url: {
         required: true
+      },
+      imagesOnly: {
+        required: false
       }
     },
     data() {
